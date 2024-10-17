@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Colorsnap ~ Solid Color Image Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main id="root">
+        <section>
+            <div class="box">
+                <h1 class="heading">Enter your color</h1>
+                <div class="row">
+                    <input id="colorInput" type="text" value="#000000">
+                    <input id="colorPicker" type="color" value="#00000">
+                </div>
+                <p>
+                    <small>Example: #000000</small>
+                </p>
+            </div>
+            <hr>
+            <div class="box">
+                <h1 class="heading"> Image Dimensions (in pixels)</h1>
+                <div class="row">
+                    <div class="col">
+                        <label for="widthInput">Width</label>
+                        <input id="widthInput" type="text" value="500">
+                    </div>
+                    <div class="col">
+                        <label for="heightInput">Height</label>
+                        <input id="heightInput" type="text" value="500">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="box">
+                <button onclick="downloadImage()" class="btn">Download PNG</button>
+            </div>
+        </section>
+    </main>
+
+    <canvas id="colorCanvas"></canvas>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

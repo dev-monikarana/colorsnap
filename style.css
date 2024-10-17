@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #343A40;
+    overflow: hidden;
+}
+
+canvas {
+    display: hidden;
+}
+
+main {
+    height: 100vh;
+    position: relative;
+    background-color: black;
+}
+
+section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: calc(100vh - 2rem);
+    margin: 1rem;
+    padding: 1.25rem;
+    background-color: white;
+    border-radius: 0.75rem;
+}
+
+.box {
+    padding: 1.25rem 0;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.col {
+    flex: 1;
+}
+
+h1.heading {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+}
+
+label,
+small {
+    font-size: 0.75rem;
+    color: #6C757D;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+}
+input[type="color"] {
+    width: 45px;
+    height: 38.5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.65rem 1rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 0.15rem;
+}
